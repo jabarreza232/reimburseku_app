@@ -26,7 +26,7 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import id.co.evolution.reimbursekuapp.feature.auth.presentation.viewmodel.LoginState
+import id.co.evolution.reimbursekuapp.feature.auth.presentation.state.LoginState
 import id.co.evolution.reimbursekuapp.feature.auth.presentation.viewmodel.LoginViewModel
 import id.co.evolution.reimbursekuapp.ui.theme.ReimbursekuAppTheme
 

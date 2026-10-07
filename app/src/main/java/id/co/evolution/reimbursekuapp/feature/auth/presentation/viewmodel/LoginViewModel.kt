@@ -6,17 +6,13 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import id.co.evolution.reimbursekuapp.core.utils.Resource
 import id.co.evolution.reimbursekuapp.feature.auth.domain.model.AuthUser
 import id.co.evolution.reimbursekuapp.feature.auth.domain.repository.AuthRepository
+import id.co.evolution.reimbursekuapp.feature.auth.presentation.state.LoginState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
-data class LoginState(
-    val isLoading: Boolean = false,
-    val user: AuthUser? = null,
-    val error: String = ""
-)
 
 @HiltViewModel
 class LoginViewModel @Inject constructor(private val repository: AuthRepository) : ViewModel() {
